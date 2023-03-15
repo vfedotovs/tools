@@ -8,3 +8,17 @@ fo() {
     [ "$key" = ctrl-o ] && open "$file" || ${EDITOR:-vim} "$file"
   fi 
 }
+
+alias n="nvim"
+
+alias ozc="nvim ~/.zshrc"
+alias otc="nvim ~/.tmux.conf"
+alias onc="nvim ~/.config/nvim/init.vim"
+
+# tmux aliases
+alias tls="tmux ls"
+alias ta="tmux attach -t"
+alias tn="tmux new -t"
+alias tk="tmux kill-session -t"
+
+alias rgf='rg --files | rg'
